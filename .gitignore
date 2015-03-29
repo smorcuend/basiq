@@ -1,0 +1,11 @@
+*~
+target
+nbproject
+node_modules
+bower_components
+npm-debug.log
+
+# Editor File Ignore
+*.sublime-project
+*.sublime-workspace
+.idea/

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        <%- title %>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+    <!-- build:css(demo) styles/main.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        max-width: 800px;
+        margin: 0 auto
+    }
+    
+    .content {
+        padding: 1em
+    }
+    
+    h1 {
+        background-color: rgba(200, 205, 255, 0.6);
+        margin: 0;
+        padding: 1em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    .homepage {
+        margin: 0.5em 0;
+    }
+    </style>
+</head>
+
+<body>
+    <h1><%- title %> - v<%- version %></h1>
+    <div class="content">
+        <h2><%- description %></h2>
+        <p class="homepage">basiq.js API Documentation: <span><a href="<%- homepage %>"><%- homepage %></a></span></p>
+        <h2>Plugins:</h2>
+        <ul>
+            <% _.forEach(plugins, function(plugin) { %>
+                <li>
+                    <%- plugin %>
+                </li>
+                <% }); %>
+        </ul>
+        <p>[Work in progress]</p>
+    </div>
+    <!-- build:js({dist}) scripts/basiq.polyfills.min.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/es6-shim/es6-shim.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- basiq plugins -->
+    <!-- injector:js -->
+    <!-- endinjector -->
+</body>
+
+</html>

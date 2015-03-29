@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        basiq.js
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+
+    <style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        max-width: 800px;
+        margin: 0 auto
+    }
+    
+    .content {
+        padding: 1em
+    }
+    
+    h1 {
+        background-color: rgba(200, 205, 255, 0.6);
+        margin: 0;
+        padding: 1em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    .homepage {
+        margin: 0.5em 0;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>basiq.js - v0.0.1</h1>
+    <div class="content">
+        <h2>basiq is a cross-platform JavaScript minimal library inspired by jQuery and based on new ES6 recommendation.</h2>
+        <p class="homepage">basiq.js API Documentation: <span><a href="http://smorcuend.github.io/basiq">http://smorcuend.github.io/basiq</a></span></p>
+        <h2>Plugins:</h2>
+        <ul>
+            
+                <li>
+                    basiq.browser
+                </li>
+                
+                <li>
+                    basiq.logger
+                </li>
+                
+                <li>
+                    basiq.mousewheel
+                </li>
+                
+        </ul>
+        <p>[Work in progress]</p>
+    </div>
+    <script src="scripts/basiq.polyfills.min.js"></script>
+    <!-- basiq plugins -->
+    <!-- injector:js -->
+    <script src="scripts/plugins/basiq.browser.min.js"></script>
+    <script src="scripts/plugins/basiq.logger.min.js"></script>
+    <script src="scripts/plugins/basiq.mousewheel.min.js"></script>
+    <!-- endinjector -->
+</body>
+
+</html>
