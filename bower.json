@@ -2,7 +2,14 @@
     "name": "basiq",
     "description": "basiq is a cross-platform JavaScript minimal library inspired by jQuery and based on new ES6 recommendation.",
     "version": "0.0.1",
-    "keywords": ["basiq", "js", "library", "jQuery", "es6", "minimal"],
+    "keywords": [
+        "basiq",
+        "js",
+        "library",
+        "jQuery",
+        "es6",
+        "minimal"
+    ],
     "license": "Apache-2.0",
     "homepage": "http://smorcuend.github.io/basiq",
     "repository": {
