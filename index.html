@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>basiq.js by smorcuend</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>basiq.js</h1>
+          <h2>basiq.js is a cross-platform JavaScript minimal library inspired by jQuery and based on new ES6 recommendation.</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/smorcuend/basiq/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/smorcuend/basiq/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/smorcuend/basiq" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="basiqjs" class="anchor" href="#basiqjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>basiq.js</h1>
+
+<p>basiq is a cross-platform JavaScript minimal library inspired by jQuery and based on new ES6 recommendation. Like as jQuery, basiq is designed to simplify the client-side scripting of HTML.</p>
+
+<p>This library provides basic utilities as:</p>
+
+<ul>
+<li>DOM selector elements</li>
+<li>handle events</li>
+<li>helpers for develop Ajax applications</li>
+</ul>
+
+<p>Also provides capabilities for developers to create plugins on top of the JavaScript library.(basiq plugins)</p>
+
+<pre><code>Creator: @smorcuend
+Contributors: @jmanuel_rosa
+Source code: https://smorcuend.github.io/basiq
+</code></pre>
+
+<h2>
+<a id="browser-support" class="anchor" href="#browser-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Browser support</h2>
+
+<ul>
+<li>Chrome 9+ </li>
+<li>Firefox 6+</li>
+<li>Opera 11.6+</li>
+<li>Safari 6+</li>
+<li>IE 10+ (9 with polyfills)</li>
+</ul>
+
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changelog</h2>
+
+<ul>
+<li>v0.0.1(work in progress)
+
+<ul>
+<li>Initial draft version</li>
+<li>Gruntfile &amp; bower.json added</li>
+<li>source code scaffold added</li>
+<li>dist &amp; demo folder added</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="polyfills-es6" class="anchor" href="#polyfills-es6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polyfills ES6</h2>
+
+<ul>
+<li><p>String.prototype.contains</p></li>
+<li><p>String.prototype.starsWith</p></li>
+<li><p>Promise Object - <a href="https://github.com/jakearchibald/es6-promise">https://github.com/jakearchibald/es6-promise</a></p></li>
+</ul>
+
+<h2>
+<a id="other-functions" class="anchor" href="#other-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other functions</h2>
+
+<ul>
+<li><p>supports: Check Support for some functionality or CSS property (detect CSS prefixes)    </p></li>
+<li><p>addWheelListener: Listener for mouse wheel action</p></li>
+</ul>
+
+<h2>
+<a id="api-documentation" class="anchor" href="#api-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Documentation</h2>
+
+<h3>
+<a id="query-selector-selector-function" class="anchor" href="#query-selector-selector-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Query selector "$(selector)" function</h3>
+
+<pre><code>.all()
+</code></pre>
+
+<p>Get all element(s) from DOM query selector
+@returns {Array}
+<br><br></p>
+
+<pre><code>.append()
+</code></pre>
+
+<p>Append HTML Elements from string to DOM query selector
+<br><br></p>
+
+<pre><code>.addClass()
+</code></pre>
+
+<p>addClass to HTMLElement from DOM query selector
+<br><br></p>
+
+<pre><code>.removeClass()
+</code></pre>
+
+<p>removeClass to HTMLElement from DOM query selector
+<br><br></p>
+
+<pre><code>.toggleClass()
+</code></pre>
+
+<p>toggleClass to HTMLElement from DOM query selector
+<br><br></p>
+
+<pre><code>.css()
+</code></pre>
+
+<p>Css apply styles function. Example: {'color':'red','fontSize':'16px'}
+<br><br></p>
+
+<pre><code>.closest(pivot)
+</code></pre>
+
+<p>Get if element from DOM query selector have parent {pivot}
+<a href="https://github.com/return" class="user-mention">@return</a> {[basiq]}
+<br><br></p>
+
+<pre><code>.parent()
+</code></pre>
+
+<p>Get parent from element from DOM query selector
+<a href="https://github.com/return" class="user-mention">@return</a> {[basiq]}
+<br><br></p>
+
+<pre><code>.columnizr(numberOfCols, columnGap, columnRule)
+</code></pre>
+
+<p>CSS3 Columnizr function. Params -&gt; numberOfCols: {int},columnGap:{css string  style},columnRule:{css string style}
+<br><br></p>
+
+<pre><code>.resize( callback )
+</code></pre>
+
+<p>Detect resize event
+<br><br></p>
+
+<h3>
+<a id="basiq-helpers" class="anchor" href="#basiq-helpers" aria-hidden="true"><span class="octicon octicon-link"></span></a>basiq helpers</h3>
+
+<pre><code>$.customEvent(name,data)
+</code></pre>
+
+<p>Generate custom events - Modern browsers. Params = name:{string}, data:{function}
+<br><br></p>
+
+<pre><code>$.ajax( url, type, data, async, arrayHeaders, responseType)
+</code></pre>
+
+<p>XHR helper<br>
+<a href="https://github.com/return" class="user-mention">@return</a> {native Promise}
+<br><br></p>
+
+<pre><code>$.runLater(callback)
+</code></pre>
+
+<p>Force event added to the browser bucket event
+<br><br></p>
+
+<h3>
+<a id="basiq-plugins" class="anchor" href="#basiq-plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>basiq plugins</h3>
+
+<h3>
+<a id="basiqlogger-basic-logging-helper" class="anchor" href="#basiqlogger-basic-logging-helper" aria-hidden="true"><span class="octicon octicon-link"></span></a>basiq.logger (basic logging helper):</h3>
+
+<pre><code>$.log
+</code></pre>
+
+<p><br>
+.err() - Error console log<br>
+.warn() - warning console log <br>
+info() - info console log<br>
+<br><br></p>
+
+<h4>
+<a id="set-up-debug-mode" class="anchor" href="#set-up-debug-mode" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set up debug mode:</h4>
+
+<p>$.log.debugmode:[debug mode]
+[debug mode]
+    0: Debug mode disable
+    1: Simple debug mode
+    2: Debug mode with trace
+<br></p>
+
+<h3>
+<a id="basiqbrowser-basic-browser-detect-helper" class="anchor" href="#basiqbrowser-basic-browser-detect-helper" aria-hidden="true"><span class="octicon octicon-link"></span></a>basiq.browser (basic browser detect helper):</h3>
+
+<pre><code>$.browser
+</code></pre>
+
+<p><br>
+.{
+    browser,
+    version,
+    name
+}
+<br><br></p>
+        </section>
+
+        <footer>
+          basiq.js is maintained by <a href="https://github.com/smorcuend">smorcuend</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+                  <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-31122385-6");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+      </div>
+    </div>
+  </body>
+</html>
