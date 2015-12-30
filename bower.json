@@ -1,35 +1,33 @@
 {
-    "name": "basiq",
-    "description": "basiq is a cross-platform JavaScript minimal library inspired by jQuery and based on new ES6 recommendation.",
-    "version": "0.0.1",
-    "keywords": [
-        "basiq",
-        "js",
-        "library",
-        "jQuery",
-        "es6",
-        "minimal"
-    ],
-    "license": "Apache-2.0",
-    "homepage": "http://smorcuend.github.io/basiq",
-    "repository": {
-        "type": "git",
-        "url": "ssh://git@github.com:smorcuend/basiq.git"
-    },
-    "authors": [
-        "Sergio Morcuende <smorcuend@gmail.com> (http://smorcuend.es)",
-        "Jose Manuel Rosa <@jmanuel_rosa>"
-    ],
-    "ignore": [
-        "src/",
-        "demo/",
-        ".editorconfig",
-        ".gitignore",
-        ".jshintrc",
-        "Gruntfile.js"
-    ],
-    "main": "dist/basiq.min.js",
-    "dependencies": {
-        "es6-shim": "~0.27.1"
-    }
+  "name": "basiq",
+  "description": "basiq is a cross-platform JavaScript minimal library inspired by jQuery and based on new ES6 recommendation.",
+  "version": "0.0.1",
+  "keywords": [
+    "basiq",
+    "js",
+    "library",
+    "jQuery",
+    "es6",
+    "minimal"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "http://smorcuend.github.io/basiq",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:smorcuend/basiq.git"
+  },
+  "authors": [
+    "Sergio Morcuende <smorcuend@gmail.com> (http://smorcuend.es)",
+    "Jose Manuel Rosa <@jmanuel_rosa>"
+  ],
+  "ignore": [
+    "src/",
+    "demo/",
+    ".editorconfig",
+    ".gitignore",
+    ".jshintrc",
+    "Gruntfile.js"
+  ],
+  "main": "dist/basiq.js",
+  "dependencies": {}
 }
