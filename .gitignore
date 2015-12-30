@@ -1,0 +1,13 @@
+node_modules/
+bower_components/
+.sass-cache/
+.idea/
+.tmp/
+dist/
+
+npm-debug.log
+
+# Editor File Ignore
+*.sublime-project
+*.sublime-workspace
+.idea/
